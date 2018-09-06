@@ -28,4 +28,10 @@ public class Program1
         System.out.print("Hey git"); 
         return 5;
     }
+    
+    public int junk2(int x) 
+    {
+        System.out.print("Hey git"); 
+        return 6;
+    }
 }
