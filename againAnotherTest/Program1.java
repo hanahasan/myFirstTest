@@ -22,4 +22,10 @@ public class Program1
     {
         System.out.print("Hello");
     }
+    
+    public int junk(int x) 
+    {
+        System.out.print("Hey git"); 
+        return 5;
+    }
 }
