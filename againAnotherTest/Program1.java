@@ -29,7 +29,7 @@ public class Program1
         return 5;
     }
     
-    public int junk2(int x) 
+    public int trash(int x) 
     {
         System.out.print("Hey git"); 
         return 6;
