@@ -13,36 +13,35 @@ public class parking
     public static void main (String[] args)
     {
         Scanner in = new Scanner(System.in);
-        Stack street = new Stack(); 
-        Stack driveway = new Stack(); 
+        Stack <Integer> street = new Stack<>(); 
+        Stack<Integer> driveway = new Stack<>(); 
         
-        Integer car = 1;
+        System.out.println("What car do you want to add/remove?"); 
+        Integer car = in.nextInt();
         while (car != 0)
         {
-            System.out.println("What car do you want to add/remove?"); 
-            car = in.nextInt();
-        
             if (car < 0) //removing car 
-            
-               if (driveway.peek().intValue() == Math.abs(car.intValue()))//found the car you wanna remove
-               {
-                   driveway.pop();
-                   while (street.empty() == false)//emptying street into driveway
-                   {
-                       driveway.push(street.pop());
-                    }
-                }
-               else
+            {
+               while(driveway.peek().intValue() != Math.abs(car.intValue()))//found the car you wanna remove
                {
                    street.push(driveway.pop());
+               }
+               //when the car is found 
+               driveway.pop();
+               while (street.empty() == false)
+               {
+                   driveway.push(street.pop());
                 }
-            
+            }
             else //adding car 
             {
                 driveway.push(car); 
             }
             System.out.println("On the Street: " + street); 
             System.out.println("On the Driveway: " + driveway);
+            
+            System.out.println("What car do you want to add/remove?"); 
+            car = in.nextInt();
         }
        
         
