@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=row\ column
+comment0.target=Pair(int,\ int)
+comment0.text=\r\n\ Default\ constructor\ for\ objects\ of\ class\ pair\r\n
+comment1.params=
+comment1.target=int\ getRow()
+comment2.params=
+comment2.target=int\ getColumn()
+comment3.params=
+comment3.target=int\ getValue()
+comment4.params=newValue
+comment4.target=void\ setValue(int)
+comment5.params=newRow
+comment5.target=void\ setRow(int)
+comment6.params=newColumn
+comment6.target=void\ setColumn(int)
+numComments=7
