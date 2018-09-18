@@ -23,7 +23,8 @@ public class Grid
        while (count <=100) 
        {
            Pair compare = coordinates.pop();
-           
+           if (coordinate.getValue() == 0)//not been filled
+           {}
        }
 
    }
